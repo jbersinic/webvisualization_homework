@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latitude</title>
+
+  <!-- Bring in our bootstrap stylesheet & style.css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <!--Embed Font-->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  </style>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light sticky-top">
+
+  <!-- Brand -->
+  <a class="navbar-brand text-white rounded p-2 shadow-sm bg-info" href="#">Latitude<img src= "/images/globe.png" style="padding: 5px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar Formatting -->
+  <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto flex-nowrap">
+    <li class="nav-item active">
+      <a class="nav-link active" href="/templates/index.html">Home <span class="sr-only">Lattitude Homework Home Page</span></a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
+        Plots
+      </a>
+      <div class="dropdown-menu flex-grow-1 text-center shadow">
+        <a class="dropdown-item" href="/templates/temp.html">Max Temperature</a>
+        <a class="dropdown-item" href="/templates/humid.html">Humidity</a>
+        <a class="dropdown-item" href="/templates/wind.html">Wind Speed</a>
+        <a class="dropdown-item" href="/templates/cloud.html">Cloudiness</a>
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="/templates/compare.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/templates/data.html">Data</a>
+      </li>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<!-- Title of Landing Page -->
+<div class="jumbotron text-center">
+  <h1>Summary: Latitude vs. X</h1>
+  <p>"There's no such thing as bad weather, just soft people." ~ Bill Bowerman</p>
+</div>
+
+<!-- Landing Page Containers -->
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="/images/SM_Latitude_vs_Temperature.png" class="float-left img-fluid" alt="Responsive image">
+      <h3>Web Visualizations Project</h3>
+      <hr>
+      <p>The purpose of this project began to visualize what weather patterns existed in relation to latitude coordinates. In order to begin this visualization, 
+        we started by pulling data from OpenWeatherMap API where we assembled a dataset of over 500 cities' weather detail.</p>
+      <p>After this, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at inded: temperature, cloudiness, wind speed, and humidity. 
+        This site now provides the source sata and visualizations created as part of the analysis, as well as explanations and descriptions of any trends, findings and correlations found.
+      </p>
+    </div>
+   
+  </div>
+</div>
+
+  <!-- Card content -->
+    
+    <div class="container">
+    
+    <div class="card-deck">
+  
+      <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+      <img class="card-img-top" src="/images/SM_Latitude_vs_Temperature.png" alt="Lat vs. Temperature">
+        <div class="card-body">
+        <h5 class="card-title">Lat vs. Temperature </h5>
+        <p class="card-text">How Does Latitude Affect Temperature?</p>
+        <a href="/templates/temp.html" class="btn btn-light">See Temperature Plot</a>
+        </div>
+       </div>
+  
+       <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+        <img class="card-img-top" src="/images/SM_Latitude_vs_Humidity.png" alt="Lat vs. Humidity">
+          <div class="card-body">
+          <h5 class="card-title">Lat vs. Humidity</h5>
+          <p class="card-text">How Does Latitude Affect Humidity?</p>
+          <a href="/templates/humid.html" class="btn btn-light">See Humidity Plot</a>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+          <img class="card-img-top" src="/images/SM_Latitude_vs_WindSpeed.png" alt="Lat vs. Wind Speed">
+            <div class="card-body">
+            <h5 class="card-title">Lat vs. Wind Speed</h5>
+            <p class="card-text">How Does Latitude Affect Wind Speed?</p>
+            <a href="/templates/wind.html" class="btn btn-light">See Wind Plot</a>
+            </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="/images/SM_Latitude_vs_Cloudiness.png" alt="Lat vs. Cloudiness">
+              <div class="card-body">
+              <h5 class="card-title">Lat vs. Cloudiness</h5>
+              <p class="card-text">How Does Latitude Affect Cloudiness?</p>
+              <a href="/templates/cloud.html" class="btn btn-light">See Cloudiness Plot</a>
+              </div>
+          </div>
+  </div>
+  </div>
+<!-- Footer -->
+  <footer class="page-footer fixed-bottom bg-info">
+    <div class="footer-copyright text-center py-1">© 2020 Copyright: Jenny Bersinic
+    </div>
+</footer>
+
+  </body>
+</html>
